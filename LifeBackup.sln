@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeBackup.Api", "LifeBackup.Api\LifeBackup.Api.csproj", "{C0A08A2B-91DF-4E7B-80EB-F0D567E329A6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeBackup.Core", "LifeBackup.Core\LifeBackup.Core.csproj", "{2A160C0F-9F6F-4414-874C-87937298BE49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeBackup.Infrastructure", "LifeBackup.Infrastructure\LifeBackup.Infrastructure.csproj", "{2F91DC35-70E0-4C01-993B-830AFB7CCA6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5937846C-308C-4420-800A-5CAEB8387EED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeBackup.Integeration.Tests", "LifeBackup.Integeration.Tests\LifeBackup.Integeration.Tests.csproj", "{8F430D09-8F20-4AFF-A81A-B83AA318E3D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeBackupUI", "LifeBackupUI\LifeBackupUI.csproj", "{43F745F3-717E-4E04-8E62-F8241F2CFFF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0A08A2B-91DF-4E7B-80EB-F0D567E329A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A08A2B-91DF-4E7B-80EB-F0D567E329A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A08A2B-91DF-4E7B-80EB-F0D567E329A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A08A2B-91DF-4E7B-80EB-F0D567E329A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A160C0F-9F6F-4414-874C-87937298BE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A160C0F-9F6F-4414-874C-87937298BE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A160C0F-9F6F-4414-874C-87937298BE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A160C0F-9F6F-4414-874C-87937298BE49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F91DC35-70E0-4C01-993B-830AFB7CCA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F91DC35-70E0-4C01-993B-830AFB7CCA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F91DC35-70E0-4C01-993B-830AFB7CCA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F91DC35-70E0-4C01-993B-830AFB7CCA6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F430D09-8F20-4AFF-A81A-B83AA318E3D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F430D09-8F20-4AFF-A81A-B83AA318E3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F430D09-8F20-4AFF-A81A-B83AA318E3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F430D09-8F20-4AFF-A81A-B83AA318E3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F745F3-717E-4E04-8E62-F8241F2CFFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F745F3-717E-4E04-8E62-F8241F2CFFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F745F3-717E-4E04-8E62-F8241F2CFFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F745F3-717E-4E04-8E62-F8241F2CFFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F430D09-8F20-4AFF-A81A-B83AA318E3D5} = {5937846C-308C-4420-800A-5CAEB8387EED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30719D31-70A4-4711-B85F-BA10752BAE92}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,23 @@
+install-package awssdk.s3 // both in API and Infrastructure projects
+install-package AWSSDK.Extensions.NetCore.Setup // install in api controller
+//in appsetting.json
+{
+  "AWS": {
+    "Profile": "lifebackup-profile",
+    "Region": "us-east-2"
+  }
+}
+// in API startup file
+services.AddAWSService<IAmazonS3>(Configuration.GetAWSOptions());
+
+// Create IAM Role on AWS
+
+install aws cli
+run command => aws --version
+run command => aws configure
+
+//"plularsightss3bucket"
+{
+  "requestId": "A53JS4Y3V4ZMMEAT",
+  "bucketName": "plularsightss3bucket"
+}

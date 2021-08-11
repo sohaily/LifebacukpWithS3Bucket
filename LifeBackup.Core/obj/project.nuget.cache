@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "hOeB5ZqV7Y7pUFPCdkRQpQRvK7PIWh6azPaTA/OHkWeF3P53bdY0xZDGnCAyJ77zLmHb2osE4KU6MypMD4/7mg==",
+  "success": true,
+  "projectFilePath": "D:\\Demoes\\Dot uisng S3\\LifeBackup\\LifeBackup.Core\\LifeBackup.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.8\\microsoft.aspnetcore.http.features.5.0.8.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

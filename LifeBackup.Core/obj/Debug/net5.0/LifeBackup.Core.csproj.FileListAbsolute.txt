@@ -1,0 +1,11 @@
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\bin\Debug\net5.0\LifeBackup.Core.deps.json
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\bin\Debug\net5.0\LifeBackup.Core.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\bin\Debug\net5.0\ref\LifeBackup.Core.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\bin\Debug\net5.0\LifeBackup.Core.pdb
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.AssemblyInfoInputs.cache
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.AssemblyInfo.cs
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.csproj.CoreCompileInputs.cache
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\ref\LifeBackup.Core.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Core\obj\Debug\net5.0\LifeBackup.Core.pdb

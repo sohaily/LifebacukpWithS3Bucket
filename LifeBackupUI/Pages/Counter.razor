@@ -1,0 +1,52 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<link href="/validation.css" rel="stylesheet" />
+
+<h1 class="bg-info text-white">Upload File</h1>
+
+<div class="form-group">
+    <InputFile OnChange="@ChangeHandler" />
+</div>
+<div class="form-group">
+    <button class="btn btn-primary" @onclick="UploadFile">Click</button>
+</div>
+
+@if (apiResponse != null)
+{
+    <h2>Uploaded File</h2>
+    <img src="@apiResponse" />
+}
+
+@code {
+    public string apiResponse { get; set; }
+    public IBrowserFile F;
+
+    private void ChangeHandler(InputFileChangeEventArgs e)
+    {
+        F = e.File;
+    }
+
+    public async Task UploadFile()
+    {
+        if (F != null)
+        {
+            // 968435456 is roughly equalt to 900 mb file size
+            using (var ms = F.OpenReadStream(968435456))
+            {
+                var content = new MultipartFormDataContent();
+                content.Add(new StreamContent(ms), "file", F.Name);
+
+                using (var httpClient = new HttpClient())
+                {
+                    using (var response = await httpClient.PostAsync("http://localhost:57423/api/files/bucket444/add?bucketName=bucket444&formFiles="+, content))
+                    {
+                        response.EnsureSuccessStatusCode();
+                        apiResponse = await response.Content.ReadAsStringAsync();
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\LifeBackup.Infrastructure.deps.json
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\LifeBackup.Infrastructure.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\ref\LifeBackup.Infrastructure.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\LifeBackup.Infrastructure.pdb
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.AssemblyInfoInputs.cache
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.AssemblyInfo.cs
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\ref\LifeBackup.Infrastructure.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.pdb
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\LifeBackup.Core.dll
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\bin\Debug\net5.0\LifeBackup.Core.pdb
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.csproj.AssemblyReference.cache
+D:\Demoes\Dot uisng S3\LifeBackup\LifeBackup.Infrastructure\obj\Debug\net5.0\LifeBackup.Infrastructure.csproj.CopyComplete

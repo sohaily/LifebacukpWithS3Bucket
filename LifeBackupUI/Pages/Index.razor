@@ -1,0 +1,82 @@
+﻿@page "/"
+@inject HttpClient http;
+@using LifeBackup.Core.Communication.Bucket;
+    @*<div class="form-group">
+        <label for="name">Bucket Name: </label>
+        <InputText Id="name" Class="form-control" ></InputText>
+    </div>*@
+<EditForm Model="@S3CreateBucket" OnValidSubmit="@SaveBucket">
+    <label>Enter Name of Bucket: </label>
+    <InputText @bind-Value="S3CreateBucket.BucketName"></InputText>
+    <button type="submit" value="Save">Create Bucket</button>
+</EditForm>
+   
+
+@*<button class="btn btn-success" @onclick="@GetS3BucketList">Get S3 Bucket List</button>*@
+@if (listS3Buckets == null)
+{
+    <p> Loading...</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bucket Name</th>
+            <th>Date</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bucket in @listS3Buckets)
+        {
+        <tr>
+            <td>@bucket.BucketName</td>
+            <td>@bucket.CreationDate</td>
+            <td><button @onclick="@(() => DeleteBucket(@bucket.BucketName))">Delete</button></td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+@code{
+    List<ListS3BucketResponse> listS3Buckets = new List<ListS3BucketResponse>();
+    CreateBucketResponse S3CreateBucket = new CreateBucketResponse();
+
+    //public class ListS3BucketResponse
+    //{
+    //    public string BucketName { get; set; }
+    //    public DateTime CreationDate { get; set; }
+    //}
+    protected override async Task OnInitializedAsync()
+    {
+        listS3Buckets = await http.GetJsonAsync<List<ListS3BucketResponse>>("http://localhost:57423/api/bucket/list");
+    }
+    private async Task GetS3BucketList()
+    {
+        listS3Buckets = await http.GetJsonAsync<List<ListS3BucketResponse>>("http://localhost:57423/api/bucket/list");
+    }
+    private async Task SaveBucket()
+    {
+
+        using (var httpClient = new HttpClient())
+        {
+            var content = new StringContent(S3CreateBucket.BucketName);
+
+            using (var response = await httpClient.PostAsync("http://localhost:57423/api/bucket?bucketName="+ S3CreateBucket.BucketName, content))
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+                await GetS3BucketList();
+            }
+        }
+    }
+    private async Task DeleteBucket(string bucketName)
+    {
+        using (var httpClient = new HttpClient())
+        {
+            using (var response = await httpClient.DeleteAsync("http://localhost:57423/api/bucket/list?bucketName=" + bucketName))
+            {
+                string apiResponse = await response.Content.ReadAsStringAsync();
+            }
+        }
+        await GetS3BucketList();
+    }
+}
